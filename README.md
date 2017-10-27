@@ -65,7 +65,7 @@ Import Notes.
 
 1)This application required internet connectivity to download data feed from NVD NIST.
 
-2)This application 7zip command line application installed/extracted in C:\Program Files
+2)This application required 7zip command line installed/extracted in C:\Program Files
 
 3)Do not remove any files from the application directory.
 
