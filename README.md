@@ -1,5 +1,7 @@
 # ProacAlert
-The objective of this project is to alert users in a timely manner about the new vulnerabilities as per their preference but same time able to run from a Windows desktop machine as a completely local instance. This application get the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds) by synchronizing every 2 hrs. 
+The objective of this project is to alert users in a timely manner about the new vulnerabilities as per their preference but same time able to run from a Windows desktop machine as a completely local instance. This application get the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds) by synchronizing every 2 hrs.
+
+Please find the package as a ZIP file,Please extract and configure it in Windows schedule task.
 
 As the synchronization interval is 2 hours there is no need to execute the application before that interval.
 
