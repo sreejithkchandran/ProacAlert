@@ -61,7 +61,9 @@ How to receive alerts?
 Alerts can be received in 3 ways as follows.
 
 1)Outlool email
+
 2)Email Relay
+
 3)Popup and log (popup is currently tested on Windows7 only)
 
 Outlook let you receive alerts via outlook email, all you need to do is to configure your Outlook and give your email address in the Outlook session of config.ini file as below.(The email in the screen shot is a dummy one, please change it to your email address)
