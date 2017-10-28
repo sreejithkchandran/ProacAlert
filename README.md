@@ -23,8 +23,10 @@ How to configure/filter the alerts?
 
 Alert can be configured via ‘config.ini’ file which comes along with the package. Alert configuration has following sections.
 
-1)Vendor 
+1)Vendor
+
 2)Product
+
 3)Score
 
 Vendor section let filter the alerts for specific vendors. If you do not want to use this section you can comment out this section by using ; in front of Vendor.
