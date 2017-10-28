@@ -1,19 +1,25 @@
 # ProacAlert
-The objective of this project is to alert users in a timely manner about the new vulnerabilities as per their preference but same time able to run from a Windows desktop machine as a completely local instance. This application get the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds) by synchronizing every 2 hrs.
+The aim of this project is to alert users in a timely manner about the new vulnerabilities as per their preference.
 
-Please find the package as a ZIP file,Please extract and configure it in Windows schedule task.
+The advantages of this application are:
 
-As the synchronization interval is 2 hours there is no need to execute the application before that interval.
+1)This application can run from a Windows desktop.
 
-The best way to execute this application is via windows schedule task to run every 2 or 3 hrs or once in a day as per your need. 
+2)Easily filter based on Vendor, Product and CVE risk score.
 
-![alt text](https://s20.postimg.org/fbgml2ykt/sctask1.png)
+3)No need to publish email or IP address in external sites to receive alerts.
 
-NB: Please make sure to provide your application directory path in “Start in (Optional)” section otherwise it won’t work.
+Prerequisites for this application are :
+1) Internet connectivity
+2) Command line version of 7-Zip program in either C:\ or C:\Program Files.
 
-![alt text](https://s20.postimg.org/oj8v1vst9/sctask2.png)
+How does it works?
 
-![alt text](https://s20.postimg.org/m1x3unj7h/sctask3.png)
+This application gets the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds) .By default synchronizing interval is every 2 hours but you can tune it the way you want by executing via Windows schedule task.
+
+NB: As the synchronization interval is 2 hours there is no need to execute the application before that interval.
+
+How to configure/filter the alerts?
 
 Alert can be configured via ‘config.ini’ file which comes along with the package. Alert configuration has following sections.
 
@@ -27,7 +33,7 @@ Vendor section let filter the alerts for specific vendors. If you do not want to
 
 Product section let filter the alerts for specific products. If you do not want to use this section you can comment out this section by using ; in front of Product.
 
-![alt text](https://s20.postimg.org/6uh4a01jx/conf3.png)
+![alt text](https://s20.postimg.org/6uh4a01jx/conf6.png)
 
 Score is the CVE Risk score, by default is 7, you can’t comment out this section but you can tune it between 1 to 10, 1 is  least and 10 is most.
 
@@ -37,15 +43,17 @@ If you choose vendor and product same time then it should be a specific match fo
 
 If you want every alert on particular score then comment out vendor and product section using ; in front of Vendor and Product section. Score is always equal and greater than the value you have provided.
 
+How to receive alerts?
+
 Alerts can be received in 3 ways as follows.
 
 1)Outlool email
 2)Email Relay
 3)Popup and log (popup is currently tested on Windows7 only)
 
-Outlook let you receive alerts via outlook email, all you need to do is to configure your Outlook and give your email address in the Outlook session of config.ini file as below.
+Outlook let you receive alerts via outlook email, all you need to do is to configure your Outlook and give your email address in the Outlook session of config.ini file as below.(The email in the screen shot is a dummy one, please change it to your email address)
 
-![alt text](https://s20.postimg.org/ldo9bqn2l/conf4.png)
+![alt text](https://s20.postimg.org/ldo9bqn2l/conf7.png)
 
 Alerts will be received via email as below.
 
@@ -55,11 +63,24 @@ Email relay let you receive emails via an email relay server, you need to provid
 
 ![alt text](https://s20.postimg.org/f1941e4fh/conf5.png)
 
-If you do not choose neither outlook nor email relay then you will receive the alerts via popup and also a log file will be created in the application directory. Popup is currently tested on Winodws7 only.
+If you do not choose neither outlook nor email relay then you will receive the alerts via popup (Popup only for Windows7) and also a log file will be created in the application directory. 
 
 ![alt text](https://s20.postimg.org/6vr238vm5/al2.png)
 
 This application comes with a sqlite db to avoid duplicate alerting so only new vulnerabilities are reported.
+
+NB: The best way to receive the alerts is via Outlook. 
+
+
+The best way to execute this application is via windows schedule task to run every 2 or 3 hrs or once in a day as per your need. 
+
+![alt text](https://s20.postimg.org/fbgml2ykt/sctask1.png)
+
+NB: Please make sure to provide your application directory path in “Start in (Optional)” section otherwise it won’t work.
+
+![alt text](https://s20.postimg.org/oj8v1vst9/sctask2.png)
+
+![alt text](https://s20.postimg.org/m1x3unj7h/sctask3.png)
 
 Import Notes.
 
