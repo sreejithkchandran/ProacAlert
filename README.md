@@ -1,5 +1,5 @@
 # ProacAlert
-The aim of this project is to alert users in a timely manner about the new vulnerabilities as per their preference.
+The aim of this project is to alert users in a timely manner about the new vulnerabilities as per their preferences.
 
 The advantages of this application are:
 
@@ -10,13 +10,15 @@ The advantages of this application are:
 3)No need to publish email or IP address in external sites to receive alerts.
 
 
-Prerequisites for this application are :
+Prerequisites for this application are:
+
 1) Internet connectivity
+
 2) Command line version of 7-Zip program in either C:\ or C:\Program Files.
 
 How does it works?
 
-This application gets the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds) .By default synchronizing interval is every 2 hours but you can tune it the way you want by executing via Windows schedule task.
+This application gets the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds). By default synchronizing interval is every 2 hours but you can tune it the way you want via Windows schedule task.
 
 NB: As the synchronization interval is 2 hours there is no need to execute the application before that interval.
 
@@ -32,7 +34,7 @@ How to install this application?
 
 How to configure/filter the alerts?
 
-Alert can be configured via ‘config.ini’ file which comes along with the package. Alert configuration has following sections.
+Alerts can be configured via ‘config.ini’ file which comes along with the package. Alerts configuration has following sections:
 
 1)Vendor
 
@@ -48,9 +50,9 @@ Product section let filter the alerts for specific products. If you do not want 
 
 ![alt text](https://s20.postimg.org/6nvm1mkrx/conf7.png)
 
-Score is the CVE Risk score, by default is 7, you can’t comment out this section but you can tune it between 1 to 10, 1 is  least and 10 is most.
+Score is the CVE Risk score, by default is 7, you cannot comment out this section but you can tune it between 1 to 10, 1 is least and 10 is most.
 
-Users can choose Vendor and Product in combination, either one or every alerts based on the score.
+Users can choose Vendor and Product in combination, either one or every alert based on the score.
 
 If you choose vendor and product same time then it should be a specific match for example, vendor = cisco, juniper and product=ios, junos if you choose vendor = cisco,juniper and product=ios then only cisco and ios based alerts are reported so make sure you configure accordingly.
 
@@ -87,11 +89,11 @@ This application comes with a sqlite db to avoid duplicate alerting so only new 
 NB: The best way to receive the alerts is via Outlook. 
 
 
-The best way to execute this application is via windows schedule task to run every 2 or 3 hrs or once in a day as per your need. 
+The best way to execute this application is via windows schedule task to run every 2 or 3 hours or once in a day as per your need. 
 
 ![alt text](https://s20.postimg.org/fbgml2ykt/sctask1.png)
 
-NB: Please make sure to provide your application directory path in “Start in (Optional)” section otherwise it won’t work.
+NB: Please make sure to provide your application directory path in “Start in (Optional)” section otherwise it will not work.
 
 ![alt text](https://s20.postimg.org/oj8v1vst9/sctask2.png)
 
@@ -99,13 +101,13 @@ NB: Please make sure to provide your application directory path in “Start in (
 
 Important Notes.
 
-1)This application required internet connectivity to download data feed from NVD NIST.
+1)This application requires internet connectivity to download data feed from NVD NIST.
 
-2)This application required 7zip command line installed/extracted in C:\Program Files
+2)This application requires 7zip command line installed/extracted in C:\Program Files
 
 3)Do not remove any files from the application directory.
 
-4)Make sure to tune properly otherwise you will receive every alerts that can be annoying.
+4)Make sure to tune properly otherwise you will receive every alert, which can be annoying.
 
 
-
+Please reach me out via my email sreeju_kc@hotmail.com if you have any queries.
