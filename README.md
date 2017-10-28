@@ -97,7 +97,7 @@ NB: Please make sure to provide your application directory path in “Start in (
 
 ![alt text](https://s20.postimg.org/m1x3unj7h/sctask3.png)
 
-Import Notes.
+Important Notes.
 
 1)This application required internet connectivity to download data feed from NVD NIST.
 
