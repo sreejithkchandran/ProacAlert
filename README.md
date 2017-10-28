@@ -9,6 +9,7 @@ The advantages of this application are:
 
 3)No need to publish email or IP address in external sites to receive alerts.
 
+
 Prerequisites for this application are :
 1) Internet connectivity
 2) Command line version of 7-Zip program in either C:\ or C:\Program Files.
@@ -18,6 +19,16 @@ How does it works?
 This application gets the latest vulnerabilities from NVD NIST data base (https://nvd.nist.gov/vuln/Data-Feeds) .By default synchronizing interval is every 2 hours but you can tune it the way you want by executing via Windows schedule task.
 
 NB: As the synchronization interval is 2 hours there is no need to execute the application before that interval.
+
+How to install this application?
+
+1) Please download the ProacAlert.7z, extract it in a folder.
+
+2) Open config.ini file and filter based on your preference.
+
+3) Test it by executing ProacAlert.exe.
+
+4) Configure it via Windows schedule task to receive alerts regularly
 
 How to configure/filter the alerts?
 
@@ -31,11 +42,11 @@ Alert can be configured via ‘config.ini’ file which comes along with the pac
 
 Vendor section let filter the alerts for specific vendors. If you do not want to use this section you can comment out this section by using ; in front of Vendor.
 
-![alt text](https://s20.postimg.org/oxa712csd/conf1.png)
+![alt text](https://s20.postimg.org/82x6q8bjh/conf6.png)
 
 Product section let filter the alerts for specific products. If you do not want to use this section you can comment out this section by using ; in front of Product.
 
-![alt text](https://s20.postimg.org/6uh4a01jx/conf6.png)
+![alt text](https://s20.postimg.org/6nvm1mkrx/conf7.png)
 
 Score is the CVE Risk score, by default is 7, you can’t comment out this section but you can tune it between 1 to 10, 1 is  least and 10 is most.
 
