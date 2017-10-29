@@ -42,11 +42,11 @@ Alerts can be configured via ‘config.ini’ file which comes along with the pa
 
 3)Score
 
-Vendor section let filter the alerts for specific vendors. If you do not want to use this section you can comment out this section by using ; in front of Vendor.
+Vendor section let filter the alerts for specific vendors.You can add or remove vendors from the config.ini as per your preference. If you do not want to use this section you can comment out this section by using ; in front of Vendor.
 
 ![alt text](https://s20.postimg.org/82x6q8bjh/conf6.png)
 
-Product section let filter the alerts for specific products. If you do not want to use this section you can comment out this section by using ; in front of Product.
+Product section let filter the alerts for specific products.You can add or remove products from the config.ini as per your preference. If you do not want to use this section you can comment out this section by using ; in front of Product.
 
 ![alt text](https://s20.postimg.org/6nvm1mkrx/conf7.png)
 
