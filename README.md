@@ -70,7 +70,7 @@ Alerts can be received in 3 ways as follows.
 
 Outlook let you receive alerts via outlook email, all you need to do is to configure your Outlook and give your email address in the Outlook session of config.ini file as below.(The email in the screen shot is a dummy one, please change it to your email address)
 
-![alt text](https://s20.postimg.org/ldo9bqn2l/conf7.png)
+![alt text](https://s20.postimg.org/f339jsb4d/outlook.png)
 
 Alerts will be received via email as below.
 
@@ -78,7 +78,7 @@ Alerts will be received via email as below.
 
 Email relay let you receive emails via an email relay server, you need to provide sender, receiver, port and IP address of relay server and by removing the ;.The IP address you see in the picture below is a dumy IP so please use your email server IP. If you configure Outlook and Email relay same time then preference will be for email relay.
 
-![alt text](https://s20.postimg.org/f1941e4fh/conf5.png)
+![alt text](https://s20.postimg.org/q2ogv8wct/emailrelay.png)
 
 If you do not choose neither outlook nor email relay then you will receive the alerts via popup (Popup only for Windows7) and also a log file will be created in the application directory. 
 
